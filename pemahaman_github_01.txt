@@ -1,0 +1,12 @@
+1.Langkah untuk clone sebuah repository
+    A.Buka GIT CMD
+    B.Pilih direktory untuk clone contoh "cd/desktop"
+    C.Lalu pada tab code pilih clone menggunakan https
+    D.paka perintah "git clone " lalu copy url https
+
+2.Langkah untuk upload file ke repository github
+    A.Login kedalam akun github
+    B.Masuk ke tab menu Code
+    C.Klik Add file lalu Upload file
+    D.Drag item atau pilih file yang ingin di upload
+    E.Commit Change

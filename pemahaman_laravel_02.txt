@@ -1,0 +1,45 @@
+di environment buat second database seperti ini
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=database1
+DB_USERNAME=root
+DB_PASSWORD=secret
+
+DB_CONNECTION_SECOND=mysql
+DB_HOST_SECOND=127.0.0.1
+DB_PORT_SECOND=3306
+DB_DATABASE_SECOND=database2
+DB_USERNAME_SECOND=root
+DB_PASSWORD_SECOND=secret
+
+pada config/database.php
+'mysql' => [
+    'driver'    => env('DB_CONNECTION'),
+    'host'      => env('DB_HOST'),
+    'port'      => env('DB_PORT'),
+    'database'  => env('DB_DATABASE'),
+    'username'  => env('DB_USERNAME'),
+    'password'  => env('DB_PASSWORD'),
+],
+
+'mysql2' => [
+    'driver'    => env('DB_CONNECTION_SECOND'),
+    'host'      => env('DB_HOST_SECOND'),
+    'port'      => env('DB_PORT_SECOND'),
+    'database'  => env('DB_DATABASE_SECOND'),
+    'username'  => env('DB_USERNAME_SECOND'),
+    'password'  => env('DB_PASSWORD_SECOND'),
+],
+
+Pada Migration
+public function up()
+    {
+       Schema::connection('mysql2')->create('some_table', function($table)
+        {
+            $table->increments('id'):
+        });
+    }
+
+

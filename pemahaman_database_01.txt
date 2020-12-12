@@ -1,0 +1,7 @@
+a.tidak berhasil karena schema tidak di deklarasi
+-> gambar tertera di file (pemahaman_database_02_a.png) di dalam folder
+
+b.Berhasil jika schema dideklarasi
+->gambar tertera di file (pemahaman_database_02_b.png) di dalam folder
+
+c.Berhasil ->gambar tertera di file (pemahaman_database_02_c.png) di dalam folder

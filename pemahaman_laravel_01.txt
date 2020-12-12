@@ -1,0 +1,3 @@
+.env merupakan fitur laravel yang digunakan untuk melakukan konfigurasi dasar pada project laravel seperti setting
+smtp email,koneksi ke database,setting default host ketika serve,maintenance web DLL.Fungsi ini juga terdapat pada 
+folder config,Namun kelebihan menggunakan env kita cukup setting di satu file saja.

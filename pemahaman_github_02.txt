@@ -1,0 +1,8 @@
+step untuk melakukan pull request
+1.Cari Project yang akan kita ubah atau kontribusi did alamnya
+2.Lalu ketika sudah masuk ke dalam halaman project pilih forks (melakukan copy data ke akun github kita)
+3.Copy clone kerepository komputer dengan klik button clone icon berwarna hijau
+4.copy url https kedalam cmd GIT "git clone " lalu url
+5.Selanjutnya masuk ke direktory repository yang tadi telah di clone
+6.buat branch baru dengan commmand "git branc h" lalu nama branch lalu lakukan command "git checkout " nama branch
+7.Lakukan Kontribusi pada project

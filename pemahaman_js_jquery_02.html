@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemahaman JS JQUERY 1</title>
+</head>
+
+<body>
+    <!-- <input type='text' id='search'> -->
+    <input type='button' id='but_search' value='Search'><br />
+
+    <!-- Image loader -->
+    <div id='loader' style='display: none;'>
+        ini loading
+    </div>
+    <!-- Image loader -->
+
+    <div class='response'></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function () {
+
+            $("#but_search").click(function () {
+                $.get({
+                    url: 'https://test-ujian-masuk.infraedukasi.com',
+                    crossDomain: true,
+                    dataType: 'html',
+                    crossDomain: true,
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    headers: { 'Access-Control-Allow-Origin': '*' },
+                    beforeSend: function () {
+                        // Show image container
+                        $("#loader").show();
+                    },
+                    success: function (response) {
+                       alert("Success");
+                    },
+                    complete: function (data) {
+                        $("#loader").hide();
+                    }
+                });
+
+            });
+        });
+    </script>
+</body>
+
+</html>

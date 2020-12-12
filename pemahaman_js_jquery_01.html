@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemahaman JS JQUERY 1</title>
+</head>
+    <p id="demo"></p>
+</html>
+<script>
+    var names = ["Andi;",{"Name":"Gunawan","Address":"jl.kemerdekaan 01"},"budi"];
+    var getName = names[1].Name;
+    var getAddress = names[1].Address;
+    var gabung = "Nama : "+getName+"<br>"+"Alamat : "+getAddress;
+    demo = document.getElementById("demo");
+    demo.innerHTML +=gabung;
+</script>
